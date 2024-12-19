@@ -1,0 +1,251 @@
+/* Importation de la font */
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=+Barlow&family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Configuration du "root" */
+:root {
+  --b: blue;
+  --r: red;
+  --y: yellow;
+}
+
+/* Version mobile */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-img-descktop,
+.phone-img-tablet{
+  display: none;
+}
+
+.phone-img-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.pay-text-logo-header-page {
+  margin-left: 8px;
+}
+
+.full-header-home-logo {
+  align-items: flex-end;
+  display: flex;
+}
+
+.descktop-nav {
+  display: none;
+  position: absolute;
+}
+
+/* Menu déroulant */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-right: 24px;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 8px;
+  min-width: 100px;
+  border: 1px solid magenta;
+  text-align: center;
+  z-index: 1;
+  justify-content: center;
+  background-color: #003cff;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #1134a8;
+  margin: 4px;
+}
+
+.dropdown-content a:hover {
+  background-color: #00e959;
+  color: #222222;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  border: 2px solid #003cff;
+  border-radius: 8px;
+}
+
+/* Main & body */
+main {
+  width: 90%;
+}
+
+nav {
+  align-items: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9ecfc;
+}
+
+.tablet-page {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 760px) {
+
+  body{
+    background-color: #d9ecfc;
+    min-height: 96px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+
+
+  .tablet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tablet-page {
+    visibility: visible;
+  }
+
+  /* .tablet-image{
+    display: flex;
+    align-items: flex-start;
+  } */
+
+  .tablet-descktop-nav {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .button-descktop-tablet-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .shedule-tablet-button {
+    background-color: palevioletred;
+    padding: 16px 44px 16px 44px;
+    border-radius: 32px;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: 600;
+  }
+
+  .pay-text-logo-header-page {
+    margin-left: 8px;
+  }
+
+  .header-logo-image {
+    align-items: flex-end;
+  }
+
+  .header-phone-logo-image{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  .mobile-nav{
+    display: none;
+  }
+
+  .tablet-descktop-nav {
+    position: initial;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .shedule-button-descktop {
+    background-color: palevioletred;
+    padding: 16px 44px 16px 44px;
+    border-radius: 32px;
+    color: white;
+  }
+
+  .mobile-page,
+  .tablet-page {
+    display: none;
+    visibility: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: 600;
+  }
+
+  main {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  body {
+    background-color: #d9ecfc;
+  }
+
+  .left-descktop-nav {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: space-around;
+  }
+
+  .header-phone-logo-image{
+    display: none;
+  }
+}
